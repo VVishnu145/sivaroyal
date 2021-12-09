@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: Add-employee
+baseUri: http://employeeapi.com
+description: To add employee for hr details
+/add-employee:
+  post:
+    body:
+      application/json:
+        example:
+          {
+            "Name":"Vishnu",
+            "Address":"ATP",
+            "Email":"vissu167@gmail.com"
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "msg":"Add employee successfully"
+              }      
